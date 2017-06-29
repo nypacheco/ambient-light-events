@@ -3,11 +3,21 @@ body{
     overflow: hidden;
 }
 
-.container{
+.container-dark{
+     display: -webkit-flex;
+     display: flex;
+     -webkit-align-items: center;
+     align-items: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     height: 100vh;
+}
+
+.container-light{
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
-    align-items: center;
+    align-items: flex-start;
     -webkit-justify-content: center;
     justify-content: center;
     height: 100vh;
@@ -18,6 +28,12 @@ img.bat {
     width: 225px;
     -webkit-animation: heartbeat 8s ease-in-out infinite both;
     animation: heartbeat 8s ease-in-out infinite both;
+}
+
+img.bat-sleeping {
+    position: absolute;
+    width: 185px;
+    top: -40px;
 }
 
 @-webkit-keyframes heartbeat {
