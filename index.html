@@ -4,42 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Ambient Light API</title>
-    <style>
-        body{
-            background-color: #323232;
-        }
-
-        .container{
-            display: -webkit-flex;
-            display: flex;
-            -webkit-align-items: center;
-            align-items: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello world</h1>
+    <div id="particles-js" class="container">
+        <img class="bat myBounceDiv" src="resources/images/bat.svg"/>
     </div>
-
-<script>
-    if("ondevicelight" in window){
-        window.addEventListener("devicelight", function(event) {
-            alert("The current level of ambient light is " + event.value + " lux");
-        });
-    } else {
-        alert("ondevicelight not supported");
-    }
-
-    if("onlightlevel" in window){
-        window.addEventListener("lightlevel", function(event) {
-            alert("The type of ambient light available is " + event.value);
-        });
-    } else {
-        alert("onlightlevel not supported");
-    }
-</script>
+    <script src="resources/js/index.js"></script>
+    <script src="vendors/particles/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'vendors/particles/config.json');
+    </script>
 </body>
 </html>
