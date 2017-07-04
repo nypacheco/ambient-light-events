@@ -1,24 +1,23 @@
 body{
-    background-color: #141829;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
-.container-dark{
-     display: -webkit-flex;
-     display: flex;
-     -webkit-align-items: center;
+#container-dark{
+     background-image: url('../images/bgDark.png');
+     background-color: #00001f;
      align-items: center;
-     -webkit-justify-content: center;
      justify-content: center;
      height: 100vh;
 }
 
-.container-light{
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
+#container-light{
+    background-image: url('../images/bgLight.png');
+    background-color: #bfbfff;
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: flex-start;
-    -webkit-justify-content: center;
     justify-content: center;
     height: 100vh;
 }
@@ -26,14 +25,17 @@ body{
 img.bat {
     position: absolute;
     width: 225px;
-    -webkit-animation: heartbeat 8s ease-in-out infinite both;
-    animation: heartbeat 8s ease-in-out infinite both;
+    margin-top: -40px;
+    margin-left: -30px;
+    animation: heartbeat 3s ease-in-out infinite both;
 }
 
 img.bat-sleeping {
     position: absolute;
     width: 185px;
-    top: -40px;
+    top: -45px;
+    margin-left: -30px;
+    animation: heartbeat 10s ease-in-out infinite both;
 }
 
 @-webkit-keyframes heartbeat {
@@ -103,4 +105,16 @@ img.bat-sleeping {
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
     }
+}
+
+.z{
+    position: absolute;
+    color: black;
+    font-family: arial;
+    font-size: 0;
+    font-weight: bold;
+}
+
+button{
+    position: absolute;
 }
