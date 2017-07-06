@@ -3,6 +3,7 @@ var interval;
 
 document.getElementById('container-light').style.display = 'none';
 document.getElementById('container-dark').style.display = 'none';
+document.getElementById('container-not-supported').style.display = 'none';
 
 if("ondevicelight" in window){
     window.addEventListener("devicelight", function(event) {
@@ -20,7 +21,7 @@ if("ondevicelight" in window){
         }
     });
 } else {
-    alert("ondevicelight not supported");
+    document.getElementById('container-not-supported').style.display = 'flex';
 }
 
 function snore() {

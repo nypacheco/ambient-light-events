@@ -22,6 +22,12 @@ body{
     height: 100vh;
 }
 
+#container-not-supported{
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+}
+
 img.bat {
     position: absolute;
     width: 370px;
