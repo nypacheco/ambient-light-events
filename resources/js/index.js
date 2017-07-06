@@ -28,9 +28,9 @@ function snore() {
     elm.innerText = "Z";
     elm.setAttribute("class", "z");
 
-    posTop = elmFace.top + 230;
+    posTop = elmFace.top + 400;
     posLeft = elmFace.left + ($(".bat-sleeping").width()/2);
-    aniTop = posTop + 60;
+    aniTop = posTop + 100;
     aniLeft = (posLeft + 50) + Math.round(Math.random()*80);
 
     $(elm).css({
