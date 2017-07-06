@@ -1,4 +1,5 @@
 var elmFace = 0;
+var interval;
 
 document.getElementById('container-light').style.display = 'none';
 document.getElementById('container-dark').style.display = 'none';
@@ -9,11 +10,12 @@ if("ondevicelight" in window){
             document.getElementById('container-dark').style.display = 'flex';
             document.getElementById('container-light').style.display = 'none';
             $("#container-light").find("span").remove();
+            clearInterval(interval);
         } else {
             document.getElementById('container-light').style.display = 'flex';
             document.getElementById('container-dark').style.display = 'none';
             elmFace = $(".bat-sleeping").offset();
-            setInterval(snore, 1000);
+            interval = setInterval(snore, 1000);
             snore();
         }
     });

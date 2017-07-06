@@ -25,8 +25,6 @@ body{
 img.bat {
     position: absolute;
     width: 225px;
-    margin-top: -40px;
-    margin-left: -30px;
     animation: heartbeat 3s ease-in-out infinite both;
 }
 
@@ -34,7 +32,6 @@ img.bat-sleeping {
     position: absolute;
     width: 185px;
     top: -45px;
-    margin-left: -30px;
     animation: heartbeat 10s ease-in-out infinite both;
 }
 
